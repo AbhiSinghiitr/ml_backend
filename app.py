@@ -22,9 +22,9 @@ def hello_world():
 @app.route('/process_voice', methods=['POST'])
 def process_voice():
     print("here")
-    audio_data = request.get_data()
-    map_object = process_voice_input(audio_data)
-    
+    voice_file = request.get_data()
 
-    print("here")
+    map_object = process_voice_input(voice_file)
+
     return jsonify(map_object)
+
