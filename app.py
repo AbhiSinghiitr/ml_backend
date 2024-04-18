@@ -15,6 +15,10 @@ def process_voice_input(voice_data):
     
     return map_object
 
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
+
 @app.route('/process_voice', methods=['POST'])
 def process_voice():
     if 'voice_data' not in request.files:
