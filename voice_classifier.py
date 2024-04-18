@@ -8,7 +8,7 @@ emotion = np.array(["angry", "anxious", "apologetic", "assertive", "concerned", 
 model_path = './classifier/rf.joblib'
 
 
-rf_model1 = load(model_path)
+rf_model1 = load(model_path, mmap_mode='r')
 
 
 
