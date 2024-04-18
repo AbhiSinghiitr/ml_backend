@@ -22,6 +22,9 @@ def hello_world():
 @app.route('/process_voice', methods=['POST'])
 def process_voice():
     print("here")
+    if 'voice_data' not in request.files:
+        return jsonify({'error': 'No voice data found'}), 400
+    
     voice_file = request.files['voice_data']
     map_object = process_voice_input('aud.wav')
 
