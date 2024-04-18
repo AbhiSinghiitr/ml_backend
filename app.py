@@ -22,7 +22,7 @@ def hello_world():
 @app.route('/process_voice', methods=['POST'])
 def process_voice():
     print("here")
-    # voice_file = request.files['voice_data']
+    voice_file = request.files['voice_data']
     map_object = process_voice_input('aud.wav')
 
     # map_object={
