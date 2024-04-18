@@ -1,5 +1,0 @@
-numpy
-load
-librosa
-flask
-Gunicorn
