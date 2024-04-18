@@ -27,4 +27,4 @@ def process_voice():
     # voice_file = request.files['voice_data']
     map_object = process_voice_input('aud.wav')
 
-    return jsonify(map_obj)
+    return jsonify(map_object)
