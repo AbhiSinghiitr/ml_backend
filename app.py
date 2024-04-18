@@ -23,7 +23,7 @@ def hello_world():
 def process_voice():
     print("here")
     audio_data = request.get_data()
-    map_object = process_voice_input('aud.wav')
+    map_object = process_voice_input(audio_data)
     
 
     print("here")
