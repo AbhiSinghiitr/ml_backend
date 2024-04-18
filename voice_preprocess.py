@@ -4,7 +4,7 @@ import io
 
 def calculate_mfccs(audio_file, frame_length_ms=25, hop_length_ms=None, num_mfcc=12, num_mel_bins=26):
     # Load audio file
-    y, sr = librosa.load(io.BytesIO(audio_data))
+    y, sr = librosa.load(io.BytesIO(audio_file))
 
     # Calculate frame length and hop length in samples
     frame_length = int(sr * (frame_length_ms / 1000))
