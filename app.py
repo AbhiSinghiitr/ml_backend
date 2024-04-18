@@ -23,11 +23,11 @@ def hello_world():
 def process_voice():
     print("here")
     # voice_file = request.files['voice_data']
-    # map_object = process_voice_input('aud.wav')
+    map_object = process_voice_input('aud.wav')
 
-    map_object={
-        "amm":"amm"
-    }
+    # map_object={
+    #     "amm":"amm"
+    # }
 
     print("here")
     return jsonify(map_object)
